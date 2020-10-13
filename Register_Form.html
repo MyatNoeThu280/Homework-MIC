@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		// alert("OK");
+		$(document).ready(function(){
+			$(".editform").hide(); //To hide edit form when load
+			
+		$(".btnedit").click(function(){
+			// alert("OK");
+			$(".editform").show();
+			$(".regform").hide();
+ 		})
+	})
+
+	</script>
+	
+</head>
+<body>
+	
+	<form class="regform" style="margin-left:500px;">
+		<h3 class="my-3 ml-5 pl-5">Add New Student</h3>
+		<div class="form-group">
+			<label for="firstName" class="col-sm-2 control-label">Name:</label>
+			<div class="col-sm-6">
+				<input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="lastName" class="col-sm-2 control-label">Email:</label>
+			<div class="col-sm-6">
+				<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="" class="col-sm-2 control-label">Gender:</label>
+			<div class="col-sm-6">
+				<label class="radio-inline">
+					<input type="radio" name="gender" id="gender1" value="male">Male
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="gender" id="gender2" value="female">Female
+				</label>
+
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="address" class="col-sm-2 control-label">Address:</label>
+			<div class="col-sm-6">
+				<textarea class="form-control" id="address" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary" id="register">Save</button>
+			</div>
+		</div>
+
+	</form>
+	
+	<form class="editform" style="margin-left:500px;">
+		<h3 class="my-3 ml-5 pl-5">Edit Student</h3>
+		<div class="form-group">
+			<label for="firstName" class="col-sm-2 control-label">Name:</label>
+			<div class="col-sm-6">
+				<input type="text" name="firstName" class="form-control" id="firstName" placeholder="First Name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="lastName" class="col-sm-2 control-label">Email:</label>
+			<div class="col-sm-6">
+				<input type="text" name="lastName" class="form-control" id="lastName" placeholder="Last Name">
+			</div>
+		</div>
+
+		<div class="form-group">
+			<label for="" class="col-sm-2 control-label">Gender:</label>
+			<div class="col-sm-6">
+				<label class="radio-inline">
+					<input type="radio" name="gender" id="gender1" value="male">Male
+				</label>
+				<label class="radio-inline">
+					<input type="radio" name="gender" id="gender2" value="female">Female
+				</label>
+
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="address" class="col-sm-2 control-label">Address:</label>
+			<div class="col-sm-6">
+				<textarea class="form-control" id="address" rows="3"></textarea>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary" id="register">Save</button>
+			</div>
+		</div>
+
+	</form>
+	<div id="table">
+		<table border="1" cellpadding="15" width="100%">
+		<thead>
+			<th>No</th>
+			<th>Name</th>
+			<th>Gender</th>
+			<th>Email</th>
+			<th>Action</th>
+		</thead>
+		<tbody>
+			<td>1</td>
+			<td>Myat Noe Thu</td>
+			<td>Female</td>
+			<td>myatnoethu5647@gmail.com</td>
+			<td><button class="btndetail">Detail</button> 
+				<button class="btnedit">Edit</button>  
+				<button id="btndelete">Delete</button>
+			</td>
+		</tbody>
+		</table>
+	</div>
+
+</body>
+</html>
